@@ -4,7 +4,7 @@ import path from 'path';
 
 const OUTPUT_DIR = 'output';
 
-// ALTERADO: A função agora aceita colunas e linhas como parâmetros
+
 export async function cropImage(inputImagePath: string, columns: number, rows: number): Promise<string> {
   try {
     console.log(`Starting process to: ${inputImagePath} with ${columns} columns & ${rows} rows.`);
@@ -22,7 +22,7 @@ export async function cropImage(inputImagePath: string, columns: number, rows: n
       throw new Error('Unable to read image dimensions.');
     }
 
-    // ALTERADO: Usa os parâmetros em vez de constantes
+
     const pieceWidth = Math.floor(imageWidth / columns);
     const pieceHeight = Math.floor(imageHeight / rows);
 
@@ -31,7 +31,7 @@ export async function cropImage(inputImagePath: string, columns: number, rows: n
     }
 
     let pieceCount = 0;
-    // ALTERADO: Usa os parâmetros nos loops
+   
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const left = col * pieceWidth;
