@@ -79,7 +79,7 @@ if (startCropBtn) {
                 rows,
             });
 
-            // Sucesso! Exibe a mensagem e reseta a UI
+
             statusDiv.textContent = resultMessage;
             setTimeout(resetUI, 5000); // Reseta a UI após 5 segundos
 
