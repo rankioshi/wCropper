@@ -2,7 +2,7 @@
 
 ### image cropper app, **perfect for stream decks or griding images**. ###
 
-<img height="70" src=./imgs/image.png/img>
+<img src="./imgs/image.png" alt="logo" width="50%"/>
 
 # BEFORE
 
