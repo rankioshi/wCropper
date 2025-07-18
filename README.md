@@ -1,10 +1,17 @@
-![Imagem de exemplo](./imgs/image.png)
+# wCROPPER 1.0.0
 
+### image cropper app, **perfect for stream decks or griding images**. ###
 
-![Imagem de exemplo](./imgs/image1.png)
+![logo](./imgs/image.png)
 
+# BEFORE
 
-![Imagem de exemplo](./imgs/image2.png)
+![uncropped](./imgs/image1.png)
 
+# AFTER
 
-![Imagem de exemplo](./imgs/image3.png)
+![cropped](./imgs/image2.png)
+
+# Stream Dock Preview
+
+![functional Use](./imgs/image3.png)
