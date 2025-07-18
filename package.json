@@ -1,0 +1,53 @@
+{
+  "name": "image-cropper-electron",
+  "version": "1.0.0",
+  "description": "Recortador de imagens com Electron e Sharp",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "build": "tsc",
+    "package": "npm run build && electron-builder"
+  },
+  "keywords": [],
+  "author": "Seu Nome Aqui",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.4.5"
+  },
+  "build": {
+    "appId": "com.seunome.imagecropper",
+    "productName": "wCropper",
+    "directories": {
+      "output": "release"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "files": [
+      "dist/**/*",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "build/icon.png"
+    }
+  }
+}

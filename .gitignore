@@ -1,0 +1,39 @@
+# Arquivos de log e cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+npm-cache
+.npm
+
+# Dependências (a pasta mais importante a ser ignorada)
+# Elas são reinstaladas com 'npm install'
+/node_modules
+
+# Arquivos compilados do TypeScript
+# Eles são gerados com 'npm run build'
+/dist
+
+# Pasta com os executáveis e instaladores gerados
+# Eles são gerados com 'npm run package'
+/release
+
+# Arquivos de cache do Electron Builder
+.electron-builder/
+.cache/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de editores de código
+.vscode/
+.idea/
+
+# Arquivos de ambiente (se você usar)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
