@@ -1,4 +1,4 @@
-// --- ARQUIVO TOTALMENTE REFEITO ---
+
 
 // Referências aos elementos do HTML
 const selectImageBtn = document.getElementById('select-image-btn') as HTMLButtonElement;
@@ -66,7 +66,7 @@ if (startCropBtn) {
             return;
         }
 
-        // Tudo certo, vamos processar
+
         try {
             statusDiv.textContent = 'Processing. . .';
             statusDiv.classList.remove('error');
